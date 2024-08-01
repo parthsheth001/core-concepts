@@ -1,0 +1,19 @@
+[flake8]
+#ignore = E203 error codes to ignore if not required
+
+
+
+exclude =
+    .git,
+    __pycache__,
+    docs/source/conf.py,
+    venve,
+    .mypy_cache,
+
+filename = *.py
+accept-encodings = utf-8
+inline-quotes = single
+max-complexity = 12
+max-line-length = 119
+per-file-ignores =
+    core/project/settings/templates/settings.dev.py:F821
